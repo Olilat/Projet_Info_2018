@@ -3,9 +3,6 @@ local
 	[Project] = {Link ['Project2018.ozf']}
 	Time = {Link ['x-oz://boot/Time']}.1.getReferenceTime
 
- %Test github
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	% Translate a note to the extended notation.
@@ -220,7 +217,7 @@ local
 				elseif {IsExtendedChord H} then H|{PartitionConvert T} 
 				elseif {IsTransformation H} then
 					{TransformationConvert H}|{PartitionConvert T}
-				else error(cause:H comment:partitionItemNoDetected)|nil end
+				else error(cause:H comment:partitionItemNoDetected)
 			end
 		end
 	in
