@@ -256,3 +256,4 @@ in
    	% Shows the total time to run your code.
    	{Browse {IntToFloat {Time}-Start} / 1000.0}
 end
+{Browse 2}
